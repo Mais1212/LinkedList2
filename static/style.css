@@ -1,6 +1,41 @@
 body {
-  background-color: #c9f2da;
+  background-color: #D8DEEC,;
   font-family: Arial, sans-serif;
   color: #333;
   margin: 20px;
+}
+header {
+  width: 100%;
+  background-color: #ccc;
+  padding: 10px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  float: none;
+}
+
+nav {
+  background-color: #ddd;
+  padding: 5px;
+  float: none;
+}
+
+h1 {
+  margin: 0 20px;
+  flex-grow: 1;
+}
+ul.horizontal-list {
+    list-style: none;
+    padding: 0;
+}
+ul.horizontal-list li {
+    display: inline;
+    margin-right: 20px;
 }

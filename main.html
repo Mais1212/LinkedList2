@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="ru">
 <head>
   <meta charset="utf-8">
@@ -8,12 +7,23 @@
   <meta name="robots" content="index,follow">
   <title>Пример страницы с ссылками и формой</title>
 </head>
+<header>
+      <img style="float:left; margin:10px; width:100px; height:100px;" src="static/logo.png" alt="A.A Andrew" />
+      <h1>SpiritVeil</h1>
+      <nav style="float:right; background-color:#ddd; padding:5px;">
+        <ul class="horizontal-list">
+          <li><a href="https://vk.com/">VK</a></li>
+          <li><a href="">YT</a></li>
+          <li><a href="">TG</a></li>
+        </ul>
+      </nav>
+</header>
 <body>
   <h1>Список ссылок</h1>
   <ul>
     <li><a href="http://kubsu.ru">Абсолютная ссылка на главную kubsu.ru </a></li>
     <li><a href="https://kubsu.ru">Абсолютная ссылка на главную kubsu.ru(https)</a></li>
-    <li><a href="https://kubsu.ru"><img src="static/cats.jpg" alt="Картинка-ссылка"></a></li>
+    <li><a href="https://kubsu.ru"><img style="width:500px"src="static/flower.png" alt="Картинка-ссылка"></a></li>
     <li><a href="internal.html">Сокращённая ссылка на внутреннюю страницу</a></li>
     <li><a href="/">Сокращённая ссылка на главную страницу ("/")</a></li>
     <li><a href="#section1">Ссылка на фрагмент текущей страницы</a></li>
@@ -25,7 +35,7 @@
     <li><a href="../../grandparent.html">Относительная на страницу двумя уровнями выше</a></li>
     <li><p>В тексте абзаца встречается <a href="https://kubsu.ru">контекстная ссылка</a> на сайт.</p></li>
     <li><a href="https://example.com/page.html#fragment">Ссылка на фрагмент стороннего сайта</a></li>
-    <li><img src="picture.jpg" usemap="#map1" alt="Изображение с картой"></li>
+    <li><img src="static/fil.png" style="width:500px; high:500px;" usemap="map1" alt="Изображение с картой"></li>
     <li><a href="">Ссылка с пустым href</a></li>
     <li><a>Ссылка без href</a></li>
     <li><a href="nofollow-target.html" rel="nofollow">Ссылка, по которой запрещён переход поисковикам</a></li>
@@ -41,7 +51,7 @@
   </ul>
 
   <map name="map1">
-    <area shape="rect" coords="0,0,100,100" href="https://kubsu.ru" alt="Прямоугольная область">
+    <area shape="rect" coords="0,0,200,300" href="https://kubsu.ru" alt="Прямоугольная область">
     <area shape="circle" coords="150,75,40" href="https://example.com" alt="Круглая область">
   </map>
 
@@ -72,10 +82,6 @@
       <div>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Женский</label>
-      </div>
-      <div>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Другой</label>
       </div>
     </fieldset>
     <div>

@@ -24,6 +24,35 @@ header {
   justify-content: space-between;
 }
 
+.spirit-table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background: linear-gradient(90deg, #D8DEEC 0%, #A4B2CC 100%);
+  box-shadow: 0 4px 16px rgba(103, 118, 153, 0.09);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.spirit-table th, .spirit-table td {
+  padding: 16px;
+  border-bottom: 1px solid #A4B2CC;
+  text-align: left;
+}
+.spirit-table th {
+  background-color: #677699;
+  color: #F5F7FA;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+.spirit-table tr:last-child td {
+  border-bottom: none;
+}
+.spirit-table tr:hover td {
+  background-color: #E3E7F1;
+  transition: background 0.3s;
+}
+
 header img {
   margin: 10px;
   width: 100px;

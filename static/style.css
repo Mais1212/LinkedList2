@@ -1,22 +1,22 @@
 
 body {
   margin: 0px;
-  background-color: #D8DEEC; /* убрал запятую и опечатку */
+  background-color: #D8DEEC;
   font-family: Arial, sans-serif;
   color: #333;
+  background: linear-gradient(rgba(216, 222, 236, 0.8), rgba(103, 118, 153, 0.8)),
+              url('./backflowers.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 body .content {
   margin: 40px;
-  background: linear-gradient(rgba(216, 222, 236, 0.8), rgba(216, 222, 236, 0.8)),
-              url('static/backflowers.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #333; /* цвет текста для хорошей читаемости */
+  color: #333; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
   width: 100%;
-  background-color: #ccc;
+  background-color: #A4B2CC;
   padding: 10px;
   height: 110px;
   display: flex;
@@ -54,7 +54,13 @@ footer {
     margin:0px;
     height:40px;
     display:flex;
-    background-color:gray; 
+    background: linear-gradient(90deg, #677699 0%, #596180 100%);
     align-items: center;
     justify-content:center;
+    color: #F5F7FA;
 }
+
+a {
+    text-decoration: none;
+}
+

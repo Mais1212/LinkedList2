@@ -88,39 +88,38 @@
         </tr>
       </table>
     </section>
-  <section id="registration">
+<section id="registration">
       <h2 id="section1">Форма регистрации</h2>
       <form action="submit.php" method="post">
         <div>
           <label for="fullname">ФИО</label>
-          <input type="text" id="fullname" name="fullname">
+          <input type="text" id="fullname" name="fullname" required="">
         </div>
         <div>
           <label for="phone">Телефон</label>
-          <input type="tel" id="phone" name="phone">
+          <input type="tel" id="phone" name="phone" required="">
         </div>
         <div>
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required="">
         </div>
         <div>
           <label for="birth">Дата рождения</label>
-          <input type="date" id="birth" name="birth">
+          <input type="date" id="birth" name="birth" required="">
         </div>
         <fieldse>
           <legend>Пол</legend>
           <div>
-            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" id="male" name="gender" value="male" required="">
             <label for="male">Мужской</label>
           </div>
           <div>
-            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="female" name="gender" value="female" required="">
             <label for="female">Женский</label>
           </div>
-        </fieldset>
         <div>
           <label for="languages">Любимый язык программирования (множественный выбор)</label>
-          <select id="languages" name="languages[]" multiple size="6">
+          <select id="languages" name="languages[]" multiple="" size="6">
             <option value="Pascal">Pascal</option>
             <option value="C">C</option>
             <option value="C++">C++</option>
@@ -133,18 +132,16 @@
         </div>
         <div>
           <label for="bio">Биография</label>
-          <textarea id="bio" name="bio" rows="6"></textarea>
+          <textarea id="bio" name="bio" rows="6" required=""></textarea>
         </div>
         <div>
-          <input type="checkbox" id="agree" name="agree">
+          <input type="checkbox" id="agree" name="agree" required="">
           <label for="agree">С контрактом ознакомлен(а)</label>
         </div>
         <div>
           <button type="submit">Сохранить</button>
         </div>
-      </form>
-      </div>
-  </section>
+  </fieldse></form></section>
    <footer>
        <a> thankusomuch4v1s1tth1ss1te</a>
    </footer>
